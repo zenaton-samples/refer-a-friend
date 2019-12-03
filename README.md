@@ -4,11 +4,16 @@ Click this button [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https
 
 Check that your agent is running properly here: https://app.zenaton.com/agents
 
-Then, to launch a workflow from your computer:
+## Launch a Workflow
 
 install dependencies (only the first time)
 ```
 yarn
+```
+
+put your credentials into a .env file
+```
+cp .env.sample .env
 ```
 
 then launch a workflow

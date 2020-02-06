@@ -1,3 +1,6 @@
+// load .env file if it exists
+require("dotenv").config();
+
 // load dependencies
 const { workflow, task } = require('zenaton');
 

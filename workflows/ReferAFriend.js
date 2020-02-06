@@ -1,5 +1,5 @@
 module.exports.handle = function*(user) {
-  // initialize the counter of friend that have purchased a deal.
+  // initialize the counter of friends that have purchased a deal.
   let nb_friends = 0;
 
   this.log(`Starting workflow ReferAFriend for user ${user.email}.`);

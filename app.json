@@ -27,7 +27,7 @@
     },
     "SENDGRID_API_KEY": {
       "description": "The Sendgrid API key",
-      "required": true
+      "required": false
     }
   },
   "formation": {

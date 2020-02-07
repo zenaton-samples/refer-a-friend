@@ -164,7 +164,7 @@ This starts the workflow and you should be able to see it on your [Dashboard](ht
 The workflow will start waiting for the `deal_purchased` external event. It needs to receive this event three times
 to issue a refund to the user.
 
-### Sending external events
+### Send events to the workflow
 
 Let's send this event using a `curl` command again. You can also send events from your application
 using an HTTP Client to send events through the Zenaton API.
@@ -179,7 +179,7 @@ curl --request POST \
   --data '{"query":"mutation ($input: SendEventToWorkflowsInput!) {\n  sendEventToWorkflows(input: $input) {\n    status\n  }\n}\n","variables":{"input":{"appId":"<YOUR APP ID>","environment":"dev","name":"deal_purchased","data":"[{\"deal_name\": \"awesome cheese cake\",\"email\": \"friend_1@example.com\"}]","selector":{"name":"ReferAFriend","tag":"123"}}}}'
 ```
 
-You should see on your Dashboard the event that have been received by your workflow. And the workflow has started
+Check your Dashboard to see the event that has been received by the workflow. And you will see that the workflow has started
 waiting again for a new `deal_purchased` event.
 
 You can re-use the previous command to send two other events to the workflow. When they are received,
@@ -190,27 +190,24 @@ and a correct email address when running the workflow.
 
 ## Going further
 
-There are a lot of things that can be improved in this workflow:
+There are a lot of things that could be added to this workflow:
 
-The implementation is currently very naive because it does not check if the three events come from three different friends.
+For example, the current implementation does not check if the three events come from three different friends.
 You could try to fix that by making sure the three events contain different email addresses.
 
 If you want to see how to do that, you can take a look at our [step-by-step tutorial](https://zenaton.com/workflows-examples/projects/tutorial-refer-friend).
 
 ## Troubleshooting
 
-### Issue on the Zenaton website
+### Questions? 
 
-If you encounter any issue on the Zenaton website, you can ask for assitance using the support chat
-on the bottom right of the screen.
+If you encounter any issues or problems click on the chat in the bottom right hand side of the screen on the Zenaton dashboard.
 
-### Issue with the Zenaton Agent
+### Issues with the Zenaton Agent
 
 If you have a question about the Agent installation or usage, you can take a look at the [dedicated documentation](https://docs.zenaton.com/agent/installation/).
 
-If the documentation does not contain what you're looking for, or if the issue persists, you can reach out
-using the support chat on our website.
 
-### Issue with this sample project
+### Issues with this project
 
 If you have any issue with this sample project, feel free to open a new issue on the repository.

@@ -1,9 +1,8 @@
 {
-  "name": "Zenaton workflow for the \"Refer a friend\" tutorial",
-  "description": "",
-  "repository": "https://github.com/zenaton-samples/refer-a-friend",
+  "name": "Zenaton Samples - Refer A Friend",
+  "description": "This example showcases a reward system based on the combination of multiple events",
   "logo": "https://avatars0.githubusercontent.com/u/26751818?s=200&v=4",
-  "keywords": ["zenaton", "tutorial"],
+  "keywords": [],
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -26,17 +25,12 @@
       "value": "dev",
       "required": true
     },
-    "ZENATON_LISTEN_ARGS": {
-      "description": "The Zenaton Agent listen args",
-      "value": "--boot=boot.js --node",
-      "required": true
+    "SENDGRID_API_KEY": {
+      "description": "The Sendgrid API key",
+      "required": false
     }
   },
   "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "free"
-    },
     "zenatonworker": {
       "quantity": 1,
       "size": "free"

@@ -1,7 +1,12 @@
+// load .env file if it exists
+require("dotenv").config();
+
 // load dependencies
-const { workflow } = require('zenaton');
+const { workflow, task } = require('zenaton');
 
-// load definitions
-const workflowDefinition = require("./workflows/ReferAFriend");
+// define tasks
+task("Refund", require("./tasks/Refund"));
+task("SendMail", require("./tasks/SendMail"));
 
-workflow("ReferAFriend", workflowDefinition);
+// define workflows
+workflow("ReferAFriend", require("./workflows/ReferAFriend"));

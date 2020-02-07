@@ -1,8 +1,14 @@
 {
-  "name": "ReferAFriend",
+  "name": "refer-a-friend",
   "version": "1.0.0",
+  "main": "boot.js",
+  "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^6.5.1",
     "dotenv": "^8.2.0",
-    "zenaton": "^0.7.1"
+    "zenaton": "^0.8.0"
+  },
+  "scripts": {
+    "postinstall": "cp -n .env.sample $INIT_CWD/.env || :"
   }
 }

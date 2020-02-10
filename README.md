@@ -36,9 +36,8 @@ ie. payment, booking, personalized communication sequences, ETL processes and mo
     - [Sending external events](#sending-external-events)
   - [Going further](#going-further)
   - [Troubleshooting](#troubleshooting)
-    - [Issue on the Zenaton website](#issue-on-the-zenaton-website)
-    - [Issue with the Zenaton Agent](#issue-with-the-zenaton-agent)
-    - [Issue with this sample project](#issue-with-this-sample-project)
+    - [Issues with the Zenaton Agent](#issues-with-the-zenaton-agent)
+    - [Issues with this sample project](#issues-with-this-sample-project)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

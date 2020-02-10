@@ -28,10 +28,10 @@ ie. payment, booking, personalized communication sequences, ETL processes and mo
     - [Step-by-step tutorial](#step-by-step-tutorial)
     - [Requirements](#requirements)
     - [Zenaton Agent setup](#zenaton-agent-setup)
-      - [Running the Agent on Heroku (Recommended)](#running-the-agent-on-heroku-recommended)
-      - [Running the Agent locally](#running-the-agent-locally)
-      - [Running the Agent in Docker](#running-the-agent-in-docker)
-      - [Running the Agent somewhere else](#running-the-agent-somewhere-else)
+      - [Heroku (Recommended)](#running-the-agent-on-heroku-recommended)
+      - [Locally](#running-the-agent-locally)
+      - [Docker](#running-the-agent-in-docker)
+      - [Other hosting options](#other-hosting-options)
     - [Running the workflow](#running-the-workflow)
     - [Sending external events](#sending-external-events)
   - [Going further](#going-further)
@@ -136,7 +136,7 @@ cd docker && docker-compose build && docker-compose up
 
 If you go to the [Agents page](https://app.zenaton.com/agents) on your Dashboard, you should see one agent connected.
 
-#### Running the Agent somewhere else
+#### Other hosting options
 
 You can check [our documentation](https://docs.zenaton.com/going-to-production/) for more deployment options: AWS, Google Cloud, Clever Cloud, and more.
 

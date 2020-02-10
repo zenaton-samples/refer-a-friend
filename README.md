@@ -33,7 +33,7 @@ ie. payment, booking, personalized communication sequences, ETL processes and mo
       - [Docker](#running-the-agent-in-docker)
       - [Other hosting options](#other-hosting-options)
     - [Running the workflow](#running-the-workflow)
-    - [Sending external events](#sending-external-events)
+    - [Sending events](#sending-external-events)
   - [Going further](#going-further)
   - [Troubleshooting](#troubleshooting)
     - [Issues with the Zenaton Agent](#issues-with-the-zenaton-agent)

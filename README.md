@@ -45,18 +45,15 @@ ie. payment, booking, personalized communication sequences, ETL processes and mo
 
 ## About this repository
 
-This sample project demonstrates how to use Zenaton to build a referral system in your product.
+This Zenaton project includes a workflow for a Refer 3 - get 1 free referral program where a user can invite friends to purchase their  deal and if at least 3 friends purchase the deal, the user is credited for their payment and gets it for free. 
 
-This is a simple workflow that starts when a user invites 5 friends to purchase an "Awesome Cheesecake" Deal. If at least 3 friends also purchase the deal then the user is credited for their payment and gets it for free.
-
-Our workflow will wait for up to 3 of the 5 friends to purchase the deal at which point it will refund the user their payment so that they receive the deal for free.
+The workflow launches when the user invites their friends and then waits for up to 3 of the 5 friends to purchase the deal and then refund the user their original payment so that they receive the deal for free.
 
 ## How to run it
 
 ### Step-by-step tutorial
 
-If you want a step-by-step tutorial on how to run this project and explaining what it does, you can
-follow the tutorial on [this page](https://zenaton.com/workflows-examples/projects/tutorial-refer-friend).
+Check out the [step-by-step tutorial on the Zenaton website](https://zenaton.com/workflows-examples/projects/tutorial-refer-friend)for a full explanation of each step and how to run and test the project.
 
 If you're already comfortable running Zenaton projects, feel free to follow the instructions below instead.
 
